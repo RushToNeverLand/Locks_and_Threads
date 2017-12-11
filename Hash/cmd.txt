@@ -1,0 +1,9 @@
+gcc Hash_Test.c HashLock.c List_Pthreadlock.c -o Hash_Pthread_Test -lpthread
+./Hash_Pthread_Test 
+
+gcc Hash_Test.c HashLock.c List_TwoPhase.c two_phase.c -o Hash_TwoPhase_Test -lpthread
+./Hash_TwoPhase_Test
+
+gcc Hash_Test.c HashLock.c List_Mutex.c mutex.c -o Hash_Mutex_Test -lpthread
+
+gcc Hash_Test.c HashLock.c List_Spinlock.c spinlock.c -o Hash_Spinlock_Test -lpthread
