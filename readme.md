@@ -1,4 +1,5 @@
-﻿#counter: 
+# Usage:
+#counter: 
 在文件夹中```make all```就会生成四种so文件和对应的四个测试程序。
 默认的锁是spinlock，直接生成libcounter.so，其余的是带锁名的so文件
 测试前要先运行```export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.```，否则会找不到相应的so文件。
